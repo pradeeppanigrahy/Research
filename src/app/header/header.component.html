@@ -1,16 +1,7 @@
 
 <div>
     <nav>
-      <a>Navigation:</a>
-      <form>
-      <input name="dummytextbox" type="text" [(ngModel)]="voicetext">
-      <button name="start"  (click)="startCapturing();" value="Voice">Start</button>
-      <button name="stop"  (click)="stopCapturing();" value="Voice">Stop</button> 
-
-      <p>{{status}}</p>
-    </form>
-    
-      <ul>
+      <ul class="horizontal">
         <li><a href="/experiment">Experiment</a></li>
         <li><a href="/home">Home</a></li>
         <li><a href="/analytics">Analytics</a></li>
@@ -18,6 +9,12 @@
         
       </ul>
     </nav>
+    <form>
+      <input name="dummytextbox" type="text" [(ngModel)]="voicetext">
+      <button name="start"  (click)="startCapturing();" value="Voice">Start</button>
+      <button name="stop"  (click)="stopCapturing();" value="Voice">Stop</button> 
 
+    </form>
+   
   </div>
   

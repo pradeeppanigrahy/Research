@@ -6,7 +6,9 @@ import {FormsModule} from '@angular/forms'
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import {AppRoutingModule} from './app.routes';
-import { AnalyticsComponent } from './analytics/analytics.component'
+import { AnalyticsComponent } from './analytics/analytics.component';
+import {BotModule} from './bot/bot.module'
+
 
 
 @NgModule({
@@ -22,7 +24,7 @@ import { AnalyticsComponent } from './analytics/analytics.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    
+    BotModule
   ],
   providers: [],
   bootstrap: [AppComponent]

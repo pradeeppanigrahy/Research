@@ -1,0 +1,14 @@
+<div class="bot">
+<ng-container *ngFor="let message of messages | async">
+  <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+                                    'to':   message.sentBy === 'user' }">
+    {{ message.content }}
+  </div>
+</ng-container>
+<div class="query">
+<form>
+<input name="btnUserQuery" [(ngModel)]="userQuery" (keyup.enter)="sendMessage()" type="text">
+<button (click)="sendMessage()">Send</button>
+</form>
+</div>
+</div>

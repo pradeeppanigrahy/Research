@@ -1,0 +1,41 @@
+.message {
+    border-radius: 50px;
+    margin: 0 15px 10px;
+    padding: 15px 20px;
+    position: relative;
+    font-weight: bold;
+}
+.message.to {
+    background-color: #2095FE;
+    color: #fff;
+    margin-left: 100px;
+    text-align: right;
+}
+.message.from {
+    background-color: #E5E4E9;
+    color: #363636;
+    margin-right: 100px;
+}
+.message.to + .message.to,
+.message.from + .message.from {
+margin-top: -10px;
+}
+
+.bot{
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: #e7ebef;
+    border-width: thick;
+    border-style: inset;
+    height: 400px;
+    overflow: scroll;
+    z-index: 1000;
+}
+
+.query{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
